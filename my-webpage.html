@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        section>* {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .historic-place {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .historic-place>* {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        @media only screen and (min-width: 768px) {
+            header {
+                padding: 20px 40px;
+            }
+
+            section {
+                flex-wrap: nowrap;
+            }
+
+            section>* {
+                width: 48%;
+                margin-bottom: 0;
+            }
+
+            .historic-place>* {
+                width: 48%;
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1>Mashoto Kgasago</h1>
+            <img src="images/fotor_2023-3-5_2_12_34.jpg" alt="Photo of me with Table Mountain in the background">
+        </section>
+    </header>
+    <section>
+        <h2>A City I Would Like to Visit</h2>
+        <p>I would love to visit Tokyo, Japan. I am fascinated by the culture, food, and technology of Japan. Plus, I've
+            heard that Tokyo is an incredibly vibrant and exciting city. Here's a photo of Tokyo:</p>
+        <img src="images/images.jpeg" alt="Photo of Tokyo">
+    </section>
+    <section>
+        <h2>A Foreign Language I Want to Learn</h2>
+        <p>I would like to learn French because it is a beautiful and widely spoken language. Here are a few phrases in
+            French:</p>
+        <table>
+            <tr>
+                <th>English</th>
+                <th>French</th>
+            </tr>
+            <tr>
+                <td>Hello</td>
+                <td>Bonjour</td>
+            </tr>
+            <tr>
+                <td>Thank you</td>
+                <td>Merci</td>
+            </tr>
+            <tr>
+                <td>Goodbye</td>
+                <td>Au revoir</td>
+            </tr>
+            <tr>
+                <td>I love you</td>
+                <td>Je vous aime</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h2>Historical Places in Pretoria</h2>
+        <div class="historic-place">
+            <h3>Burgers Park</h3>
+            <img src="images/Burgers_park.jpg" alt="Photo of me at Historic Place 1">
+            <ul>
+                <li>Burgers Park is a public park located in the central business district of Pretoria, South Africa. It
+                    was established in 1892 and was named after Thomas Francois Burgers, a former president of the South
+                    African Republic.</li>
+                <li>The park covers an area of 4.2 hectares and is known for its beautiful gardens and a variety of
+                    trees, including jacarandas, plane trees, and palm trees. The park also features several fountains
+                    and ponds, as well as a bandstand.</li>
+                <li>Burgers Park is a popular destination for picnics and leisurely walks. It is also home to a number
+                    of bird species, including Egyptian geese, ducks, and swans. Additionally, the park has a rich
+                    history and is a popular spot for cultural events and performances.</li>
+            </ul>
+        </div>
+        <div class="historic-place">
+            <h3>Union Buildings</h3>
+            <img src="images/Union_building.jpg" alt="Photo of me at Historic Place 1">
+            <ul>
+                <li>The Union Buildings are located in Pretoria, South Africa, and serve as the official seat of the
+                    South African government. They were designed by Sir Herbert Baker and completed in 1913.</li>
+                <li>The Union Buildings are famous for their distinctive sandstone architecture and the 9-meter-tall
+                    bronze statue of Nelson Mandela, which was unveiled on the lawns in front of the buildings in 2013.
+                </li>
+                <li>The Union Buildings also feature beautiful gardens and terraces, which offer stunning views of the
+                    city. The gardens are home to a variety of indigenous plants, including a number of protea species,
+                    and are a popular destination for both tourists and locals alike.</li>
+            </ul>
+        </div>
+        <div class="historic-place">
+            <h3>SANDF Wall of Rememberance</h3>
+            <img src="images/SANDF.jpg" alt="Photo of me at Historic Place 1">
+            <ul>
+                <li>The South African National Defence Force Wall of Remembrance is a memorial structure dedicated to
+                    fallen soldiers who died in the line of duty during military operations since 1961.</li>
+                <li>The wall is located in Thaba Tshwane, Pretoria and was officially opened on the 4th of October 2016
+                    by the former President of South Africa, Jacob Zuma.</li>
+                <li>The Wall of Remembrance is designed as a curved wall with 4,048 bronze plaques, each containing the
+                    name, rank, and date of death of a fallen soldier. The wall is 80 meters long and 3 meters high, and
+                    it also includes a central feature, which is a bronze statue of a soldier in full battle gear,
+                    holding a gun and standing at attention.</li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
