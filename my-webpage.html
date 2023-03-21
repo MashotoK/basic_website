@@ -28,6 +28,7 @@
             font-size: 36px;
         }
 
+
         img {
             max-width: 100%;
             height: auto;
@@ -35,7 +36,6 @@
 
         section {
             padding: 20px;
-            display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
@@ -48,6 +48,7 @@
         .historic-place {
             display: flex;
             flex-wrap: wrap;
+            flex-direction: column;
             justify-content: space-between;
         }
 
@@ -55,6 +56,27 @@
             width: 100%;
             margin-bottom: 20px;
         }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        th {
+            text-align: left;
+            background-color: #008080
+        }
+
+        th:first-child,
+        td:first-child {
+            border-right: 1px solid black;
+        }
+
 
         @media only screen and (min-width: 768px) {
             header {
@@ -74,6 +96,26 @@
                 width: 48%;
                 margin-bottom: 0;
             }
+
+            li {
+                margin: 0 20px;
+            }
+
+            .historic-place {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .historic-place>* {
+                margin-right: 40px;
+                margin-bottom: 20px;
+            }
+
+            .historic-place>*:last-child {
+                margin-right: 0;
+
+            }
         }
     </style>
 </head>
@@ -87,9 +129,9 @@
     </header>
     <section>
         <h2>A City I Would Like to Visit</h2>
-        <p>I would love to visit Tokyo, Japan. I am fascinated by the culture, food, and technology of Japan. Plus, I've
-            heard that Tokyo is an incredibly vibrant and exciting city. Here's a photo of Tokyo:</p>
         <img src="images/images.jpeg" alt="Photo of Tokyo">
+        <p>I would love to visit Tokyo, Japan. I am fascinated by the culture, food, and technology of Japan. Plus, I've
+            heard that Tokyo is an incredibly vibrant and exciting city.</p>
     </section>
     <section>
         <h2>A Foreign Language I Want to Learn</h2>
